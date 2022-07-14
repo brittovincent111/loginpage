@@ -1,0 +1,63 @@
+<%-include('header')-%>
+
+    <!-- <div class="text-center center-div mt-5" id="login">
+    <div class="container w-25 py-5 mt-5 main-box">
+        <h3>Welcome to Express Dashboard</h3>
+        <a href="/router/logout">Log-Out</a>
+    </div>
+</div> -->
+
+    <div class="second-body">
+        <header class="fixed-top bglight">
+            <nav class="navbar ">
+                <div class="container-fluid">
+                    <a class="navbar-brand">Navbar</a>
+                    <div class="d-flex align-items-center">
+                        <span class="material-icons blk ">account_circle</span>
+                        <h5 class="blk mb-1 mx-3 ms-1 ">
+                            <%=locals.user?user:"User"%>
+                        </h5>
+                        <a class="btn" href="/logout">Log-Out</a>
+                        <!-- <button class="btn" href="/router/logout" type="submit">Log-Out</button> -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- <section>
+            <img src="/assets/bgprime-removebg.png" class="img-fluid" alt="...">
+        </section> -->
+
+        <div class="bg-2 py-5">
+            <div class="container text-con py-5">
+                <h1>Our-Product's</h1>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="container-fluid p-5">
+                        <div class="row">
+                            <% for( var i=0; i<5; i++) {%>
+                                <div class="card m-3 col-md-4 col-lg-6"
+                                    style="width: 18rem; height: 15; border: 1px solid rgb(112, 110, 110);">
+                                    <img class="card-img-top" src=<%=product[i] %> alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lenovo IdeaPad 1 Intel Celeron N4020 11.6'' HD Laptop
+                                        </h5>
+                                        <p class="card-text">Lorem ipsum dolor </p>
+                                        <a href="#" class="btn btn-light">₹1,169.00 M.R.P: ₹2,899.00 (60% off)</a>
+                                    </div>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <%-include('footer')-%>
